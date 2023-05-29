@@ -1,0 +1,32 @@
+<HTML><HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <META content="no-cache" http-equiv="pragma">
+    <META content="-1" http-equiv="expires">
+    <META content="text/html;charset=UTF-8" http-equiv="content-type">
+    <LINK href="problem-statement.css" rel="stylesheet" type="text/css">
+    <TITLE>НОД по кругу</TITLE>
+    <SCRIPT type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {inlineMath: [['$$$','$$$']], displayMath: [['$$$$$$','$$$$$$']]}
+        });
+        </SCRIPT>
+        <SCRIPT async="" src="https://polygon.codeforces.com/lib/MathJax/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript">
+    </SCRIPT>
+</HEAD><BODY>
+    <DIV class="problem-statement"><DIV class="header"><DIV class="title">НОД по кругу</DIV><DIV class="time-limit"><DIV class="property-title">ограничение по времени на тест</DIV>2 секунды</DIV><DIV class="memory-limit"><DIV class="property-title">ограничение по памяти на тест</DIV>256 мегабайт</DIV><DIV class="input-file"><DIV class="property-title">ввод</DIV>стандартный ввод</DIV><DIV class="output-file"><DIV class="property-title">вывод</DIV>стандартный вывод</DIV></DIV><DIV class="legend"><P>Массив из $$$n$$$ натуральных чисел $$$a_1,\ a_2,\ \ldots a_n$$$ записан по кругу. Следующим для числа $$$a_i$$$ назовем число $$$a_{i + 1}$$$, если $$$1 \leq i \leq n - 1$$$. Для числа $$$a_n$$$ следующим является число $$$a_1$$$ .</P><P>По массиву $$$a$$$ можно построить массив $$$b$$$ длины $$$n$$$, где $$$b_i$$$ равно наибольшему общему делителю $$$a_i$$$ и следующего за ним по кругу числа. Более формально, $$$b_i =$$$ НОД$$$(a_i, a_{(i \mod n) + 1})$$$. После этого массив $$$a$$$ заменяется на массив $$$b$$$.</P><P>Какое минимальное число таких операций необходимо совершить, чтобы все числа в массиве стали равны?</P></DIV><P></P><P></P><DIV class="input-specification"><DIV class="section-title">Входные данные</DIV><P></P><P>В первой строке дано натуральное число $$$n$$$ $$$(2 \leqslant&nbsp; n \leqslant 200\,000)$$$. В следующей строке через пробел заданы $$$n$$$ натуральных чисел: $$$a_1,\ a_2,\ldots, a_n$$$ $$$(1 \leqslant a_i \leq 1\,000\,000)$$$</P></DIV><P></P><P></P><DIV class="output-specification"><DIV class="section-title">Выходные данные</DIV><P></P><P>В единственной строке выведите целое число&nbsp;&mdash; сколько операций нужно совершить, чтобы все числа массива стали равными.</P></DIV><P></P><P></P><DIV class="sample-tests"><DIV class="section-title">Примеры</DIV><P></P><P></P><DIV class="sample-test"><DIV class="input"><DIV class="title">Входные данные</DIV><PRE class="content">
+3
+2 4 3
+</PRE></DIV><DIV class="output"><DIV class="title">Выходные данные</DIV><PRE class="content">
+2
+</PRE></DIV><DIV class="input"><DIV class="title">Входные данные</DIV><PRE class="content">
+2
+1 1
+</PRE></DIV><DIV class="output"><DIV class="title">Выходные данные</DIV><PRE class="content">
+0
+</PRE></DIV><DIV class="input"><DIV class="title">Входные данные</DIV><PRE class="content">
+5
+3 6 1 9 12
+</PRE></DIV><DIV class="output"><DIV class="title">Выходные данные</DIV><PRE class="content">
+4
+</PRE></DIV></DIV></DIV><P></P><P></P><DIV class="note"><DIV class="section-title">Примечание</DIV><P></P><P>В первом примере после одной операции массив превратится в $$$(2,\ 1,\ 1)$$$, после следующей в $$$(1,\ 1,\ 1)$$$.</P><P>Во втором примере все числа изначально равны, поэтому не нужно совершать никаких операций.</P><P>Можно показать, что в третьем примере необходимо совершить ровно 4 операции.</P></DIV></DIV><P></P><P>  </P>
+
+</BODY></HTML>

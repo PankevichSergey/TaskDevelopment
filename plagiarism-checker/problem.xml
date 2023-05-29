@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="19" short-name="plagiarism-checker" url="https://polygon.codeforces.com/p2IKAQZ/spankevich/plagiarism-checker">
+    <names>
+        <name language="russian" value="Проверка на списывание"/>
+    </names>
+    <statements>
+        <statement charset="UTF-8" language="russian" mathjax="true" path="statements/russian/problem.tex" type="application/x-tex"/>
+        <statement charset="UTF-8" language="russian" mathjax="true" path="statements/.html/russian/problem.html" type="text/html"/>
+        <statement language="russian" path="statements/.pdf/russian/problem.pdf" type="application/pdf"/>
+    </statements>
+    <tutorials>
+        <tutorial charset="UTF-8" language="russian" mathjax="true" path="statements/russian/tutorial.tex" type="application/x-tex"/>
+        <tutorial charset="UTF-8" language="russian" mathjax="true" path="statements/.html/russian/tutorial.html" type="text/html"/>
+        <tutorial language="russian" path="statements/.pdf/russian/tutorial.pdf" type="application/pdf"/>
+    </tutorials>
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="" run-count="1">
+        <testset name="tests">
+            <time-limit>1000</time-limit>
+            <memory-limit>268435456</memory-limit>
+            <test-count>56</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test description="В данном случае списавший заменяет все вхождения i на j и n на m" group="0" method="manual" points="0.0" sample="true"/>
+                <test description="В данном примере участник заменял 'a' на 'e', 'b' на 'f', 'с' на 'g' и '-' на '+'." group="0" method="manual" points="0.0" sample="true"/>
+                <test description="данный пример не является списыванием" group="0" method="manual" points="0.0" sample="true"/>
+                <test group="0" method="manual" points="0.0" sample="true"/>
+                <test group="0" method="manual" points="0.0" sample="true"/>
+                <test group="0" method="manual" points="0.0" sample="true"/>
+                <test cmd="randabyes 1 1" group="1" method="generated" points="2.0"/>
+                <test cmd="randabyes 5 1" group="1" method="generated" points="2.0"/>
+                <test cmd="randabyes 30 1" group="1" method="generated" points="2.0"/>
+                <test cmd="randabyes 500 1" group="1" method="generated" points="2.0"/>
+                <test cmd="randabyes 1000 1" group="1" method="generated" points="2.0"/>
+                <test cmd="randabyes 1000 2" group="1" method="generated" points="2.0"/>
+                <test cmd="randabyes 5000 1" group="1" method="generated" points="2.0"/>
+                <test cmd="randabyes 100000 1" group="1" method="generated" points="2.0"/>
+                <test cmd="randabyes 200000 1" group="1" method="generated" points="2.0"/>
+                <test cmd="randabyes 200000 2" group="1" method="generated" points="2.0"/>
+                <test cmd="randabcyes 2 1" group="2" method="generated" points="2.0"/>
+                <test cmd="randabcno 5 1" group="2" method="generated" points="2.0"/>
+                <test cmd="randabcyes 30 1" group="2" method="generated" points="2.0"/>
+                <test cmd="randabcyes 500 1" group="2" method="generated" points="2.0"/>
+                <test cmd="randabcyes 1000 1" group="2" method="generated" points="2.0"/>
+                <test cmd="randabcyes 1000 2" group="2" method="generated" points="2.0"/>
+                <test cmd="randabcyes 50000 1" group="2" method="generated" points="2.0"/>
+                <test cmd="randabcyes 100000 2" group="2" method="generated" points="2.0"/>
+                <test cmd="randabcyes 200000 3" group="2" method="generated" points="2.0"/>
+                <test cmd="randabcyes 200000 1" group="2" method="generated" points="2.0"/>
+                <test cmd="randanyyes 2 1" group="3" method="generated" points="2.0"/>
+                <test cmd="randanyyes 3 1" group="3" method="generated" points="2.0"/>
+                <test cmd="randanyno 4 1" group="3" method="generated" points="2.0"/>
+                <test cmd="randanyyes 5 1" group="3" method="generated" points="2.0"/>
+                <test cmd="randanyno 10 1" group="3" method="generated" points="2.0"/>
+                <test cmd="randanyyes 20 1" group="3" method="generated" points="2.0"/>
+                <test cmd="randanyno 50 1" group="3" method="generated" points="2.0"/>
+                <test cmd="randanyyes 100 1" group="3" method="generated" points="2.0"/>
+                <test cmd="randanyyes 1000 1" group="3" method="generated" points="2.0"/>
+                <test cmd="randanyyes 1000 2" group="3" method="generated" points="2.0"/>
+                <test cmd="randanyyes 1000 3" group="3" method="generated" points="2.0"/>
+                <test cmd="randanyyes 1000 4" group="3" method="generated" points="2.0"/>
+                <test cmd="randanyno 1000 5" group="3" method="generated" points="2.0"/>
+                <test cmd="randanyyes 1000 6" group="3" method="generated" points="2.0"/>
+                <test cmd="randanyyes 1000 7" group="3" method="generated" points="2.0"/>
+                <test cmd="randanyyes 1000 8" group="3" method="generated" points="2.0"/>
+                <test cmd="randanyyes 1000 9" group="3" method="generated" points="2.0"/>
+                <test cmd="randanyyes 1000 10" group="3" method="generated" points="2.0"/>
+                <test cmd="randanyno 10000 1" group="4" method="generated" points="2.0"/>
+                <test cmd="randanyyes 50000 1" group="4" method="generated" points="2.0"/>
+                <test cmd="randanyyes 100000 1" group="4" method="generated" points="2.0"/>
+                <test cmd="randanyyes 200000 1" group="4" method="generated" points="2.0"/>
+                <test cmd="randanyyes 200000 2" group="4" method="generated" points="2.0"/>
+                <test cmd="randanyyes 200000 3" group="4" method="generated" points="2.0"/>
+                <test cmd="randanyno 200000 4" group="4" method="generated" points="2.0"/>
+                <test cmd="randanyyes 200000 5" group="4" method="generated" points="2.0"/>
+                <test cmd="randanyyes 200000 6" group="4" method="generated" points="2.0"/>
+                <test cmd="randanyyes 200000 7" group="4" method="generated" points="2.0"/>
+                <test cmd="randanyyes 200000 8" group="4" method="generated" points="2.0"/>
+                <test cmd="randanyno 200000 9" group="4" method="generated" points="2.0"/>
+            </tests>
+            <groups>
+                <group feedback-policy="complete" name="0" points-policy="each-test"/>
+                <group feedback-policy="icpc" name="1" points-policy="each-test"/>
+                <group feedback-policy="icpc" name="2" points-policy="each-test"/>
+                <group feedback-policy="icpc" name="3" points-policy="each-test"/>
+                <group feedback-policy="icpc" name="4" points-policy="each-test"/>
+            </groups>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+            <file path="files/tutorial.tex"/>
+        </resources>
+        <executables>
+            <executable>
+                <source path="files/checker.cpp" type="cpp.g++17"/>
+            </executable>
+            <executable>
+                <source path="files/randabcno.cpp" type="cpp.g++17"/>
+            </executable>
+            <executable>
+                <source path="files/randabcyes.cpp" type="cpp.g++17"/>
+            </executable>
+            <executable>
+                <source path="files/randabyes.cpp" type="cpp.g++17"/>
+            </executable>
+            <executable>
+                <source path="files/randanyno.cpp" type="cpp.g++17"/>
+            </executable>
+            <executable>
+                <source path="files/randanyyes.cpp" type="cpp.g++17"/>
+            </executable>
+            <executable>
+                <source path="files/validator.cpp" type="cpp.g++17"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker type="testlib">
+            <source path="files/checker.cpp" type="cpp.g++17"/>
+            <copy path="check.cpp" type="cpp.g++17"/>
+            <testset>
+                <test-count>7</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests>
+                    <test verdict="wrong-answer"/>
+                    <test verdict="presentation-error"/>
+                    <test verdict="wrong-answer"/>
+                    <test verdict="wrong-answer"/>
+                    <test verdict="ok"/>
+                    <test verdict="wrong-answer"/>
+                    <test verdict="presentation-error"/>
+                </tests>
+            </testset>
+        </checker>
+        <validators>
+            <validator>
+                <source path="files/validator.cpp" type="cpp.g++17"/>
+                <testset>
+                    <test-count>11</test-count>
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                    <tests>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="valid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="valid"/>
+                    </tests>
+                </testset>
+            </validator>
+        </validators>
+        <solutions>
+            <solution tag="accepted">
+                <source path="solutions/192857705_qualdoom_ok.cpp" type="cpp.g++17"/>
+            </solution>
+            <solution tag="wrong-answer">
+                <source path="solutions/ab.py" type="python.3"/>
+            </solution>
+            <solution tag="wrong-answer">
+                <source path="solutions/abcpp.cpp" type="cpp.g++17"/>
+            </solution>
+            <solution tag="main">
+                <source path="solutions/main.cpp" type="cpp.g++17"/>
+            </solution>
+            <solution tag="time-limit-exceeded">
+                <source path="solutions/n2.py" type="python.3"/>
+            </solution>
+            <solution tag="time-limit-exceeded">
+                <source path="solutions/n2cpp.cpp" type="cpp.g++17"/>
+            </solution>
+            <solution tag="wrong-answer">
+                <source path="solutions/no.py" type="python.3"/>
+            </solution>
+            <solution tag="accepted">
+                <source path="solutions/solve.py" type="python.3"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>0</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list/>
+    </stresses>
+    <tags>
+        <tag value="implementation"/>
+    </tags>
+</problem>

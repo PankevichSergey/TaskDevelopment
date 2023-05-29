@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="5" short-name="circled-gcd" url="https://polygon.codeforces.com/p5B6Rlt/spankevich/circled-gcd">
+    <names>
+        <name language="russian" value="НОД по кругу"/>
+    </names>
+    <statements>
+        <statement charset="UTF-8" language="russian" mathjax="true" path="statements/russian/problem.tex" type="application/x-tex"/>
+        <statement charset="UTF-8" language="russian" mathjax="true" path="statements/.html/russian/problem.html" type="text/html"/>
+        <statement language="russian" path="statements/.pdf/russian/problem.pdf" type="application/pdf"/>
+    </statements>
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="" run-count="1">
+        <testset name="tests">
+            <time-limit>2000</time-limit>
+            <memory-limit>268435456</memory-limit>
+            <test-count>56</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test method="manual" sample="true"/>
+                <test method="manual" sample="true"/>
+                <test method="manual" sample="true"/>
+                <test cmd="genrng 2 5 1" method="generated"/>
+                <test cmd="genrng 2 5 2" method="generated"/>
+                <test cmd="genrng 3 5 1" method="generated"/>
+                <test cmd="genrng 3 10 1" method="generated"/>
+                <test cmd="gensame 3 1000000 1" method="generated"/>
+                <test cmd="gensame 3 1 1" method="generated"/>
+                <test cmd="genrng 4 10 1" method="generated"/>
+                <test cmd="genrng 4 10 2" method="generated"/>
+                <test cmd="genrng 10 3 1" method="generated"/>
+                <test cmd="genrng 10 4 1" method="generated"/>
+                <test cmd="genrng 10 5 1" method="generated"/>
+                <test cmd="genrng 10 10 1" method="generated"/>
+                <test cmd="genrng 10 20 1" method="generated"/>
+                <test cmd="genrng 10 20 2" method="generated"/>
+                <test cmd="genrng 10 20 3" method="generated"/>
+                <test cmd="genrng 10 20 4" method="generated"/>
+                <test cmd="genmixed 10 5 1" method="generated"/>
+                <test cmd="genmixed 10 5 2" method="generated"/>
+                <test cmd="genmixed 10 10 1" method="generated"/>
+                <test cmd="genmixed 10 20 1" method="generated"/>
+                <test cmd="genprimes 10 20 1" method="generated"/>
+                <test cmd="genprimes 10 20 2" method="generated"/>
+                <test cmd="genprimes 10 20 3" method="generated"/>
+                <test cmd="genprimes 10 20 4" method="generated"/>
+                <test cmd="genfib 10 20 1" method="generated"/>
+                <test cmd="genfib 10 20 2" method="generated"/>
+                <test cmd="genfib 10 20 3" method="generated"/>
+                <test cmd="genprimes 200000 1000000 1" method="generated"/>
+                <test cmd="genprimes 200000 1000000 2" method="generated"/>
+                <test cmd="genprimes 200000 1000000 3" method="generated"/>
+                <test cmd="genprimes 200000 1000000 4" method="generated"/>
+                <test cmd="genfib 200000 1000000 1" method="generated"/>
+                <test cmd="genfib 200000 1000000 2" method="generated"/>
+                <test cmd="genfib 200000 1000000 3" method="generated"/>
+                <test cmd="genfib 200000 1000000 4" method="generated"/>
+                <test cmd="genmixed 200000 1000000 1" method="generated"/>
+                <test cmd="genmixed 200000 1000000 2" method="generated"/>
+                <test cmd="genmixed 200000 1000000 3" method="generated"/>
+                <test cmd="genmixed 200000 1000000 4" method="generated"/>
+                <test cmd="bigans 200000 1000000 1" method="generated"/>
+                <test cmd="bigans 200000 1000000 2" method="generated"/>
+                <test cmd="bigans 200000 1000000 3" method="generated"/>
+                <test cmd="bigans 200000 1000000 4" method="generated"/>
+                <test cmd="bigans 200000 1000000 5" method="generated"/>
+                <test cmd="bigans 200000 1000000 6" method="generated"/>
+                <test cmd="bigans 200000 1000000 7" method="generated"/>
+                <test cmd="bigans 200000 1000000 8" method="generated"/>
+                <test cmd="bigans 200000 1000000 9" method="generated"/>
+                <test cmd="bigans 200000 1000000 10" method="generated"/>
+                <test cmd="bigans 200000 1000000 11" method="generated"/>
+                <test cmd="bigans 200000 1000000 12" method="generated"/>
+                <test cmd="bigans 200000 1000000 13" method="generated"/>
+                <test cmd="gensame 200000 1000000 1" method="generated"/>
+            </tests>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+        </resources>
+        <executables>
+            <executable>
+                <source path="files/bigans.cpp" type="cpp.g++17"/>
+            </executable>
+            <executable>
+                <source path="files/genfib.cpp" type="cpp.g++17"/>
+            </executable>
+            <executable>
+                <source path="files/genmixed.cpp" type="cpp.g++17"/>
+            </executable>
+            <executable>
+                <source path="files/genprimes.cpp" type="cpp.g++17"/>
+            </executable>
+            <executable>
+                <source path="files/genrng.cpp" type="cpp.g++17"/>
+            </executable>
+            <executable>
+                <source path="files/gensame.cpp" type="cpp.g++17"/>
+            </executable>
+            <executable>
+                <source path="files/valid.cpp" type="cpp.g++17"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker name="std::ncmp.cpp" type="testlib">
+            <source path="files/check.cpp" type="cpp.g++17"/>
+            <copy path="check.cpp"/>
+            <testset>
+                <test-count>0</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests/>
+            </testset>
+        </checker>
+        <validators>
+            <validator>
+                <source path="files/valid.cpp" type="cpp.g++17"/>
+                <testset>
+                    <test-count>10</test-count>
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                    <tests>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="valid"/>
+                        <test verdict="valid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="valid"/>
+                        <test verdict="invalid"/>
+                    </tests>
+                </testset>
+            </validator>
+        </validators>
+        <solutions>
+            <solution tag="accepted">
+                <source path="solutions/dvasilev_ok_set.cpp" type="cpp.g++17"/>
+            </solution>
+            <solution tag="time-limit-exceeded">
+                <source path="solutions/dvasilev_tl_naive.cpp" type="cpp.g++17"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/dvasilev_wa_bug.cpp" type="cpp.g++17"/>
+            </solution>
+            <solution tag="time-limit-exceeded">
+                <source path="solutions/naive.cpp" type="cpp.g++17"/>
+            </solution>
+            <solution tag="accepted">
+                <source path="solutions/primes.cpp" type="cpp.g++17"/>
+            </solution>
+            <solution tag="main">
+                <source path="solutions/queue.cpp" type="cpp.g++17"/>
+            </solution>
+            <solution tag="accepted">
+                <source path="solutions/st.cpp" type="cpp.g++17"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>0</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list/>
+    </stresses>
+    <tags>
+        <tag value="number theory"/>
+    </tags>
+</problem>
